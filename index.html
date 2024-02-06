@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 93</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+<nav class="fixed top-0 z-10 shadow-xl shadow-black p-4 m-auto mt-0 w-screen flex flex-row justify-center items-center gap-1">
+    <button id="allbtn" class="btn" onclick="allphotos()">All</button>
+    <button id="carbtn" class="btn" onclick="carfilter()">Car</button>
+    <button id="citybtn" class="btn" onclick="cityfilter()">City</button>
+    <button id="citybtn" class="btn" onclick="officefilter()">Office</button>
+</nav>
+
+<section id="container" class="w-fit max-w-11/12 flex flex-row justify-start items-center gap-5"></section>
+
+<div id="popupdiv">
+    <img id="popupimg">
+    <img class="close" src="close.png">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(61,182,166);
+}
+
+nav {
+    background-color: rgb(61,182,166);;
+}
+
+.btn {
+    letter-spacing: 5px;
+    color: white;
+    height: 40px;
+    width:150px;
+}
+
+.btn:active {
+    transform: translateY(5px);
+}
+
+#container {
+  
+    margin: auto;
+    margin-top: 100px;
+    flex-wrap: wrap;
+
+}
+
+img.newimage {
+    height:300px;
+    width:200px;
+    margin: auto;
+    margin-top: 10px;
+    border: 2px solid white;
+    animation: imganimation 1000ms linear;
+    border-radius: 5px;
+}
+
+img.newimage:hover {
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+}
+
+
+@keyframes imganimation {
+    from {
+        opacity:0;
+        transform:scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+
+#popupdiv {
+    height: 400px;
+    width: 800px;
+    max-width:90vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid black;
+    display: none;
+    padding: 0px;
+}
+
+.popupimg {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+}
+
+img.close {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+img.close:active {
+    transform: scale(0.9);
+}
